@@ -6,12 +6,118 @@
     <title>SportPro - Home</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
-
 {% extends 'layout.html' %}
 
 {% block content %}
+<!-- Carrossel -->
+<div id="bikeCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../static/album/andandobike1.avif" class="d-block w-100 carrossel-imagem" alt="Bicicleta 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Descubra a Liberdade sobre Duas Rodas</h5>
+                <p>Explore novas trilhas e sinta a brisa no rosto.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../static/album/andandobike2.png" class="d-block w-100 carrossel-imagem" alt="Bicicleta 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pedale com Estilo</h5>
+                <p>Encontre a bicicleta perfeita para o seu estilo de vida.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../static/album/andandobike3.png" class="d-block w-100 carrossel-imagem" alt="Bicicleta 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Aventura à Vista</h5>
+                <p>Prepare-se para a sua próxima grande aventura sobre duas rodas.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#bikeCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#bikeCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
 
-    <h1 >O que nossos clientes dizem</h1>
+<!-- Seção de Produtos em Destaque -->
+<section class="produtos-destaque">
+  <h2>Produtos em Destaque</h2>
+  <div class="produtos-container">
+      <div class="produto">
+          <img src="../static/album/produto1.png" alt="Produto 1">
+          <h3>Bicicleta A</h3>
+          <p>Descrição breve do produto A.</p>
+          <a href="#" class="btn">Saiba Mais</a>
+      </div>
+      <div class="produto">
+          <img src="../static/album/produto2.png" alt="Produto 2">
+          <h3>Bicicleta B</h3>
+          <p>Descrição breve do produto B.</p>
+          <a href="#" class="btn">Saiba Mais</a>
+      </div>
+      <div class="produto">
+          <img src="../static/album/produto3.png" alt="Produto 3">
+          <h3>Bicicleta C</h3>
+          <p>Descrição breve do produto C.</p>
+          <a href="#" class="btn">Saiba Mais</a>
+      </div>
+  </div>
+</section>
 
+<!-- Seção de Novidades -->
+<section class="novidades">
+    <h2>Novidades</h2>
+    <div class="novidades-container">
+        <article class="nova">
+            <h3>Nova Linha de Acessórios</h3>
+            <p>Conheça nossa nova linha de acessórios para bicicletas.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </article>
+        <article class="nova">
+            <h3>Promoções Imperdíveis</h3>
+            <p>Aproveite nossas promoções especiais para este mês.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </article>
+    </div>
+</section>
+
+<!-- Seção de Depoimentos -->
+<section class="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimentos-container">
+        <blockquote>
+            <p>"A SportPro transformou minha experiência de ciclismo! As bicicletas são de alta qualidade e o atendimento é excepcional."</p>
+            <cite>- João Silva</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Adorei a nova linha de acessórios! Eles realmente fazem a diferença nas minhas pedaladas."</p>
+            <cite>- Maria Oliveira</cite>
+        </blockquote>
+    </div>
+</section>
+
+<!-- Seção de Blog -->
+<section class="blog">
+    <h2>Últimos Artigos do Blog</h2>
+    <div class="blog-container">
+        <article class="post">
+            <h3><a href="#">5 Dicas para Manter sua Bicicleta em Perfeito Estado</a></h3>
+            <p>Aprenda como cuidar da sua bicicleta para que ela dure muito mais tempo.</p>
+        </article>
+        <article class="post">
+            <h3><a href="#">Os Melhores Destinos para Pedalar no Brasil</a></h3>
+            <p>Descubra os lugares incríveis para explorar sobre duas rodas.</p>
+        </article>
+        <article class="post">
+            <h3><a href="#">Como Escolher a Bicicleta Certa para Você</a></h3>
+            <p>Saiba quais fatores considerar na hora de escolher sua nova bicicleta.</p>
+        </article>
+    </div>
+</section>
 
 {% endblock %}

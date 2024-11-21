@@ -8,13 +8,10 @@
 </head>
 
 <body>
-   
     <footer class="rodape" id="contato">
         <div class="rodape-div">
-    
             <div class="rodape-div-1">
                 <div class="rodape-div-1-coluna">
-                    <!-- elemento -->
                     <span><b>SportPro</b></span>
                     <p>SIA Trecho 5 lote 000 bloco z sala 900 - Guará, Brasília - DF, 70000-010</p>
                 </div>
@@ -22,34 +19,48 @@
     
             <div class="rodape-div-2">
                 <div class="rodape-div-2-coluna">
-                    <!-- elemento -->
                     <span><b>Contatos</b></span>
                     <p>contato@sportpro.com</p>
                     <p>+55 63 99200-0000</p>
+                    <p>Horário: Seg - Sex, 9h - 18h</p>
                 </div>
             </div>
     
             <div class="rodape-div-3">
                 <div class="rodape-div-3-coluna">
-                    <!-- elemento -->
                     <span><b>Links</b></span>
                     <p><a href="http://127.0.0.1:5000/servicos">Serviços</a></p>
                     <p><a href="http://127.0.0.1:5000/empres">Empresa</a></p>
                     <p><a href="http://127.0.0.1:5000/sobre">Sobre</a></p>
+                    <p><a href="http://127.0.0.1:5000/faq">FAQ</a></p>
+                    <p><a href="http://127.0.0.1:5000/termos">Termos de Uso</a></p>
                 </div>
             </div>
     
             <div class="rodape-div-4">
                 <div class="rodape-div-4-coluna">
-                    <!-- elemento -->
                     <span><b>Outros</b></span>
                     <p>Políticas de Privacidade</p>
+                    <p><a href="http://127.0.0.1:5000/mapa-do-site">Mapa do Site</a></p>
                 </div>
             </div>
-    
         </div>
-        <p class="rodape-direitos">Copyright © 2024 – Todos os Direitos Reservados.</p>
+    
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="../static/album/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="../static/album/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="../static/album/instagram.png" alt="Instagram"></a>
+        </div>
+    
+        <div class="rodape-direitos">
+            <p>&copy; <span id="current-year"></span> SportPro. Todos os direitos reservados.</p>
+        </div>
     </footer>
+    
+    <script>
+        // Atualiza o ano atual automaticamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

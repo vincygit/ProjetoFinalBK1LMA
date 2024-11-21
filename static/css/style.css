@@ -1,59 +1,206 @@
 /*------CÓDIGO DO RODAPÉ------*/
 
-footer {
-    margin-top: auto; /* Faz com que o rodapé se mova para o final */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.rodape{
-    background-color: #0091e2; 
-    color: white;
-    height: auto;
-    width: 99%;
-    font-size: 14px;
-    font-family: helvetica;
-}
-.rodape a{
-    text-decoration: none;
-    color: white;
-}
-.rodape p{
-    margin-bottom: 5px;
-}
-.rodape-div{
-    display: flex;
-    flex-wrap: wrap;
-    width:100%;
-    margin: auto;
-    align-items: stretch;
-    padding: 60px 10px 40px 10px;
-}
-.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-    display: flex;
-    width: calc(100% / 4 - 20px);
-    padding: 10px;
-}
-.rodape span{
-    font-size: 20px;
-    color: white;
-}
-.rodape-direitos{
-    width: calc(100% - 20px);
-    background-color: black;
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-}
-/*mobile*/
-@media (max-width: 768px) {
-    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-        width: calc(50% - 20px);
-        padding: 10px;
-    }
-    .rodape-div{
-        padding: 60px 0px 40px 0px;
-    }
+.rodape {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Direção das colunas */
+    align-items: center; /* Centraliza o conteúdo */
 }
 
+.rodape-div {
+    display: flex; /* Usar flexbox para as colunas do rodapé */
+    flex-wrap: wrap; /* Permite que as colunas quebrem em linhas */
+    justify-content: space-around; /* Espaça as colunas uniformemente */
+    max-width: 1200px; /* Largura máxima do rodapé */
+    width: 100%; /* Largura total */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+.rodape-div span {
+    font-weight: bold; /* Negrito para os títulos */
+    font-size: 1.2em; /* Tamanho de fonte maior para os títulos */
+}
+
+.rodape-div p {
+    margin: 5px 0; /* Margem entre os parágrafos */
+}
+
+.rodape-div a {
+    color: #00BFFF; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.rodape-div a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.social-icons {
+    margin-top: 20px; /* Espaço acima dos ícones sociais */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.social-icons img {
+    width: 30px; /* Tamanho dos ícones sociais */
+}
+
+.rodape-direitos {
+    margin-top: 20px; /* Espaço acima do aviso de copyright */
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.9em; /* Tamanho de fonte menor para o aviso */
+}
 
 /*------CÓDIGO MENU------*/
 
+.menu-nav {
+    display: flex; /* Usar flexbox para o layout */
+    justify-content: space-between; /* Espaça logo e ícones sociais */
+    align-items: center; /* Alinha verticalmente */
+    background-color: black; /* Fundo preto para o menu */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.logo-img {
+    height: 40px; /* Ajusta a altura do logo */
+    margin-right: 10px; /* Espaço entre o logo e o nome */
+}
+
+.company-name {
+    color: white; /* Cor do nome da empresa */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.menu-list {
+    display: flex; /* Exibe os itens do menu em linha */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.menu-list li {
+    margin: 0 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-list a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.social-icons {
+    display: flex; /* Alinha os ícones sociais em linha */
+}
+
+.social-icons a {
+    margin-left: 15px; /* Espaço entre os ícones */
+}
+
+.social-icons img {
+    width: 30px; /* Tamanho dos ícones sociais */
+}
+
+
+/*------CÓDIGO CARROSSEL------*/
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.carousel-item img {
+    height: 500px; /* Altura fixa para as imagens do carrossel */
+    object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
+}
+
+.carrossel-imagem {
+    height: 200px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do carrossel */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+}
+
+
+
+.produtos-destaque, .novidades, .depoimentos, .blog, .contato {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.produtos-container, .novidades-container, .depoimentos-container, .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto, .nova, .post {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produto {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
