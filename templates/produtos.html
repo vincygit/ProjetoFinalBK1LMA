@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    <ul>
+        {% for produto in produtos %}
+            <li>
+                <a href="{{ url_for('produto', id=produto['id']) }}">{{ produto['nome'] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('paginainicial') }}">Voltar para a página inicial</a>
+</body>
+</html>

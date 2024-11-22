@@ -14,13 +14,13 @@
     <nav class="menu-nav">
         <div class="logo">
             <img src="../static/album/logo.png" alt="Logo da Empresa" class="logo-img">
-            <span class="company-name">SportPro</span>
+            <span class="company-name">BikesEMais</span>
         </div>
         <ul class="menu-list">
-            <li><a href="http://127.0.0.1:5000">Página Inicial</a></li>
-            <li><a href="http://127.0.0.1:5000/sobre">Sobre</a></li>
-            <li><a href="http://127.0.0.1:5000/contato">Contato</a></li>
-            <li><a href="http://127.0.0.1:5000/produtos">Produtos</a></li>
+            <li><a href="{{ url_for('paginainicial') }}">Página Inicial</a></li>
+            <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+            <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            <li><a href="{{ url_for('produtos') }}">Produtos</a></li>
         </ul>
         <div class="social-icons">
             <a href="https://facebook.com" target="_blank"><img src="../static/album/facebook.png" alt="Facebook"></a>

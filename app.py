@@ -5,6 +5,27 @@ import os
 app = Flask(__name__) # cria uma instância
 app.secret_key = 'segredo'  # Para utilizar flash messages
 
+
+class CRUD:
+    caminho = "produtos.json" # é possível usar crud.caminho = 'novo.json'
+    def __init__(self, modo) -> None:
+        self.modo = modo
+
+    def set_nome(self, nome):
+        set.nome = nome
+
+    def conexao(self, dados=None):
+        """
+            modo: '+r' para leitura
+            modo: '+w' para escrita
+        """
+        with open(self.caminho, self.modo, encoding='utf8') as file:
+            if self.modo == '+w':
+                file.write(dados)
+            elif self.modo == '+r':
+                return file.read()
+
+
 # Função para carregar os produtos do arquivo JSON
 def carregar_produtos():
     if os.path.exists('produtos.json'):
@@ -16,6 +37,11 @@ def carregar_produtos():
 @app.route('/')
 def paginainicial():
     return render_template('index.html')
+
+# Rota para a página sobre
+@app.route("/sobre", methods=('GET' ,))
+def sobre():
+    return render_template('sobre.html')
 
 
 # Rota para a página de contato
@@ -44,24 +70,36 @@ def contato():
 
     return render_template('contato.html')
 
+#--------------------BLOG-----------------#
 
-# Rota para a página de produtos
+@app.route("/blog/confira-12-dicas-para-manter-a-sua-bicicleta-sempre-em-dia", methods=('GET' ,))
+def dicas():
+    return render_template('dicasbike.html')
+
+@app.route("/blog/melhores-destinos-brasil-mountain-bike", methods=('GET' ,))
+def destinos():
+    return render_template('melhoresdestinos.html')
+
+@app.route("/blog/como-escolher-a-bike-perfeita-para-voce", methods=('GET' ,))
+def escolherbike():
+    return render_template('escolherbike.html')
+
+
+
+#--------------------PRODUTOS-----------------#
+#@app.route('/produtos/<int:id>')
+#def produto(id):
+    produtos = carregar_produtos()
+    produto_encontrado = next((produto for produto in produtos if produto['id'] == id), None)
+    
+    if produto_encontrado:
+        return render_template('produtos.html', produto=produto_encontrado)
+    else:
+        flash('Produto não encontrado!')
+        return redirect(url_for('produtos'))
+    
+
 @app.route('/produtos')
 def produtos():
     produtos = carregar_produtos()
     return render_template('produtos.html', produtos=produtos)
-
-
-#--------------------BLOG-----------------#
-
-@app.route("/blog/dicas-para-manter-sua-bicicleta-em-perfeito-estado", methods=('GET' ,))
-def dicas():
-    return render_template('dicasbike.html')
-
-@app.route("/blog/os-melhores-destinos-para-pedalar-no-brasil", methods=('GET' ,))
-def destinos():
-    return render_template('melhoresdestinos.html')
-
-@app.route("/blog/como-escolher-a-bicicleta-certa-para-voce", methods=('GET' ,))
-def escolherbike():
-    return render_template('escolherbike.html')
