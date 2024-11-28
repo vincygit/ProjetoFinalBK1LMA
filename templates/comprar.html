@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+</head>
+{% extends 'layout.html' %}
+
+{% block content %}
+    <section class="comprar">
+        <h2 class="custom-h2">Você está prestes a comprar <strong>{{ produto['nome'] }}</strong></h2>
+        <div class="produto-imagem">
+            <img src="{{ url_for('static', filename=produto['imagem']) }}" alt="{{ produto['nome'] }}" class="buy">
+        </div>
+        
+        <div class="produto-info">
+            <p><strong>Preço:</strong> R$ {{ produto['preco'] }}</p>
+            
+            <!-- Formulário para selecionar a quantidade -->
+            <form method="POST" action="/comprar/{{ produto['id'] }}">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" max="100" value="1" required>
+                
+                <button type="submit" class="btn-compra">Confirmar Compra</button>
+            </form>
+        </div>
+        
+        {% if compra_concluida %}
+            <!-- Mensagem de sucesso após a compra -->
+            <div id="msg-sucesso" class="msg-sucesso">
+                <p>Compra efetuada com sucesso! Agradecemos pela sua compra.</p>
+            </div>
+        {% endif %}
+    </section>
+{% endblock %}
+</html>

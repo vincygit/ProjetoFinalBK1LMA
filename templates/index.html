@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportPro - Home</title>
+    <title>BikesEMais - Home</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 {% extends 'layout.html' %}
@@ -44,66 +44,36 @@
     </a>
 </div>
 
-<!-- Seção de Produtos em Destaque -->
-<section class="produtos-destaque">
-  <h2>Produtos em Destaque</h2>
-  <div class="produtos-container">
-      <div class="produto">
-          <img src="../static/album/produto1.png" alt="Produto 1">
-          <h3>Bicicleta A</h3>
-          <p>Descrição breve do produto A.</p>
-          <a href="#" class="btn">Saiba Mais</a>
-      </div>
-      <div class="produto">
-          <img src="../static/album/produto2.png" alt="Produto 2">
-          <h3>Bicicleta B</h3>
-          <p>Descrição breve do produto B.</p>
-          <a href="#" class="btn">Saiba Mais</a>
-      </div>
-      <div class="produto">
-          <img src="../static/album/produto3.png" alt="Produto 3">
-          <h3>Bicicleta C</h3>
-          <p>Descrição breve do produto C.</p>
-          <a href="#" class="btn">Saiba Mais</a>
-      </div>
-  </div>
-</section>
-
-<!-- Seção de Novidades -->
-<section class="novidades">
-    <h2>Novidades</h2>
-    <div class="novidades-container">
-        <article class="nova">
-            <h3>Nova Linha de Acessórios</h3>
-            <p>Conheça nossa nova linha de acessórios para bicicletas.</p>
-            <a href="#" class="btn">Leia Mais</a>
-        </article>
-        <article class="nova">
-            <h3>Promoções Imperdíveis</h3>
-            <p>Aproveite nossas promoções especiais para este mês.</p>
-            <a href="#" class="btn">Leia Mais</a>
-        </article>
-    </div>
-</section>
-
 <!-- Seção de Depoimentos -->
 <section class="depoimentos">
-    <h2>O que nossos clientes dizem</h2>
+    <h2 class="custom-h2">O que nossos clientes dizem</h2>
     <div class="depoimentos-container">
-        <blockquote>
-            <p>"A SportPro transformou minha experiência de ciclismo! As bicicletas são de alta qualidade e o atendimento é excepcional."</p>
-            <cite>- João Silva</cite>
-        </blockquote>
-        <blockquote>
-            <p>"Adorei a nova linha de acessórios! Eles realmente fazem a diferença nas minhas pedaladas."</p>
-            <cite>- Maria Oliveira</cite>
-        </blockquote>
+        <div class="depoimentos-esquerda">
+            <blockquote>
+                <p>"A SportPro transformou minha experiência de ciclismo! As bicicletas são de alta qualidade e o atendimento é excepcional."</p>
+                <cite>- João Silva</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Adorei a nova linha de acessórios! Eles realmente fazem a diferença nas minhas pedaladas."</p>
+                <cite>- Maria Oliveira</cite>
+            </blockquote>
+        </div>
+        <div class="depoimentos-direita">
+            <blockquote>
+                <p>"Excelente atendimento e produtos de qualidade! Recomendo a todos que amam ciclismo."</p>
+                <cite>- Carlos Pereira</cite>
+            </blockquote>
+            <blockquote>
+                <p>"A melhor loja de bicicletas que já conheci. Preços justos e uma equipe muito atenciosa."</p>
+                <cite>- Ana Costa</cite>
+            </blockquote>
+        </div>
     </div>
 </section>
 
 <!-- Seção de Blog -->
 <section class="blog">
-    <h2>Últimos Artigos do Blog</h2>
+    <h2 class="custom-h2">Últimos Artigos do Blog</h2>
     <div class="blog-container">
         <article class="post">
             <h3><a href="{{ url_for('dicas') }}">Confira 12 dicas para manter a sua bicicleta sempre em dia</a></h3>

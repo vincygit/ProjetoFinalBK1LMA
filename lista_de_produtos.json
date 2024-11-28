@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nome": "Bicicleta aro 29 KRW",
+        "descricao": "Bicicleta aro 29 KRW Alumínio 24 Vel Marchas Freio a Disco Suspensão dianteira Mountain Bike X32.",
+        "preco": 792.30,
+        "imagem": "bike1.webp"
+    },
+    {
+        "id": 2,
+        "nome": "Bicicleta aro 29 Dropp Z3",
+        "descricao": "Bicicleta aro 29 Dropp Z3 Alumínio Shimano 21vel freio a disco mecânico com suspensão MTB.",
+        "preco": 787.55,
+        "imagem": "bike2.webp"
+    },
+    {
+        "id": 3,
+        "nome": "Bicicleta Aro 29 Gts",
+        "descricao": "Bicicleta Aro 29 Gts Feel Freio À Disco 24 Marchas.",
+        "preco": 835.05,
+        "imagem": "bike3.webp"
+    },
+    {
+        "id": 4,
+        "nome": "Bicicleta Aro 29 Aço Carbono Ksvj",
+        "descricao": "Bicicleta Aro 29 Aço Carbono Ksvj Freios Disco Suspensão 21v",
+        "preco": 704.90,
+        "imagem": "bike4.webp"
+    },
+    {
+        "id": 5,
+        "nome": "Bicicleta 29 GTS M1",
+        "descricao": "Bicicleta 29 GTS M1 Freio Hidráulico 1x11 CRX Suspensão Advanced",
+        "preco": 1606.11,
+        "imagem": "bike5.webp"
+    },
+    {
+        "id": 6,
+        "nome": "Bicicleta Aro 29 KRW Alumínio Shimano TZ",
+        "descricao": "Bicicleta Aro 29 KRW Alumínio Shimano TZ 24 Vel Suspensão Freio a Disco Mountain bike Ltx S40",
+        "preco": 849.30,
+        "imagem": "bike6.webp"
+    },
+    {
+        "id": 7,
+        "nome": "Bicicleta Ergométrica Spinning",
+        "descricao": "Bicicleta Ergométrica Spinning Roda Inércia 6kg Yangfit BS-200",
+        "preco": 979.90,
+        "imagem": "bike7.webp"
+    },
+    {
+        "id": 8,
+        "nome": "Bicicleta aro 29 KRW Alumínio",
+        "descricao": "Bicicleta aro 29 KRW Alumínio 24 Vel Marchas Freio a Disco Suspensão dianteira Mountain Bike X32",
+        "preco": 792.30,
+        "imagem": "bike8.webp"
+    },
+    {
+        "id": 9,
+        "nome": "Bicicleta GTSM1 MTB20",
+        "descricao": "Bicicleta GTSM1 MTB20 Câmbio Shimano 7v Freio a Disco",
+        "preco": 1048.94,
+        "imagem": "bike9.webp"
+    }
+]

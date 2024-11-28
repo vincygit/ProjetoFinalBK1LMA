@@ -2,19 +2,79 @@
     {
         "id": 1,
         "nome": "Bicicleta A",
-        "descricao": "Descrição breve do produto A.",
+        "descricao": "Descri\u00c3\u00a7\u00c3\u00a3o breve do produto A.",
         "imagem": "static/album/produto1.png"
     },
     {
         "id": 2,
         "nome": "Bicicleta B",
-        "descricao": "Descrição breve do produto B.",
+        "descricao": "Descri\u00c3\u00a7\u00c3\u00a3o breve do produto B.",
         "imagem": "static/album/produto2.png"
     },
     {
         "id": 3,
         "nome": "Bicicleta C",
-        "descricao": "Descrição breve do produto C.",
+        "descricao": "Descri\u00c3\u00a7\u00c3\u00a3o breve do produto C.",
         "imagem": "static/album/produto3.png"
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 2,
+        "valor_total": 1575.1
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
     }
 ]
