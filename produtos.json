@@ -76,5 +76,23 @@
         "nome_produto": "Bicicleta aro 29 Dropp Z3",
         "quantidade": 1,
         "valor_total": 787.55
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
+    },
+    {
+        "produto_id": 8,
+        "nome_produto": "Bicicleta aro 29 KRW Alum\u00ednio",
+        "quantidade": 1,
+        "valor_total": 792.3
+    },
+    {
+        "produto_id": 2,
+        "nome_produto": "Bicicleta aro 29 Dropp Z3",
+        "quantidade": 1,
+        "valor_total": 787.55
     }
 ]
